@@ -115,7 +115,7 @@ int main(){
         else if(aux == 2){
             int login_funcionario = 0;
             do{
-                /*
+                
                 while(login_funcionario != 1){
                         int op = 0, senha_funcionario = 0, id_funcionario;
                         char usuario[50], senha[50];
@@ -135,16 +135,18 @@ int main(){
                             senha_funcionario = id_nome(senha);
 
                             //Chama função de verificar cadastro funcionario
+                            login_funcionario = verificacao(id_funcionario, senha_funcionario, funcionario, contador_funcionario);
 
                         }else if(op == 2){
                             //Chama função de cadastrar funcionarios;
+                            contador_funcionarios = cadastrar_funcionarios(funcionario, contador_funcionarios);
 
                         }else{
                             printf("\n Essa entrada nao eh valida\n");
                         }
 
                 }
-                */
+                
 
                 EstoqueBaixo(livro, contador_livros);
 
